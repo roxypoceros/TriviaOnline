@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+    font-size: .9em;
+    color: rgb(17, 19, 43);
+
+       
+}
+
+header{
+  font-size: 1.3em;
+  padding: 15px;
+  text-align: center;
+  
+}
+
+body{
+  background: rgb(34,193,195);
+  background: linear-gradient(312deg, rgba(34,193,195,1) 0%, rgba(224,242,239,0.4184515449438202) 54%, rgba(8,245,205,0.3847436797752809) 100%);
+}
+
+#contenedor1{
+  background: white;
+  width: 800px;
+  border-radius:15px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  
+  }
+
+.nuevo{
+  font-size: 1.5em;
+  border: 3px solid rgb(75, 68, 68);
+  align-items: center;
+  width: 95%;
+  display: flex;
+  flex-grow: 1,4;
+  margin: 20px;
+  gap: 20px;
+  border-radius:15px; 
+
+}
+.nuevo > img{
+width: 50%;
+margin: 10px;
+}
+
+button{
+  background-color: #376b9e;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 20px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.resultado {
+  font-size: 1.3em;
+  padding: 15px;
+  text-align: center;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="categoria2.js"></script>
+</head>
+
+<body>
+    <header>Responde las siguientes preguntas:</header>
+
+    <div id="contenedor1">
+        <form action="myForm" id="myForm">
+            <div class="nuevo" id="pregunta1">
+                <img src="./img/princesapop.jpg" alt="Pop">
+                <div class="respuestas">
+                    <p>
+                        ¿Qué cantante estadounidense es reconocida como la princesa del pop?
+                    </p>
+
+
+                    <input type="radio" id="p10" name="pregunta1" value="Madonna" onclick="resultado()">
+                    <label for="p10" id="textomadonna">Madonna</label><br>
+
+                    <input type="radio" id="p11" name="pregunta1" value="Christina Aguilera" onclick="resultado()">
+                    <label for="p11" id="textochristinaaguilera">Christina Aguilera</label><br>
+
+                    <input type="radio" id="p12" name="pregunta1" value="Britney Spears" onclick="resultado()">
+                    <label for="p12" id="textobritneyspears">Britney Spears</label><br>
+                </div>
+            </div>
+
+
+
+
+            <div class="nuevo" id="pregunta2">
+                <img src="./img/selena.jpg" alt="selena">
+                <div class="respuestas">
+                    <p>
+                        ¿En dónde nació Selena Quintanilla?
+                    </p>
+
+                    <input type="radio" id="p13" name="pregunta2" value="Corpus Christi" onclick="resultado()">
+                    <label for="p13" id="textocorpuschristi">Corpus Christi</label><br>
+
+                    <input type="radio" id="p14" name="pregunta2" value="Houston" onclick="resultado()">
+                    <label for="p14" id="textohouston">Houston</label><br>
+
+                    <input type="radio" id="p15" name="pregunta2" value="Dallas" onclick="resultado()">
+                    <label for="p15" id="textodallas">Dallas</label><br>
+                </div>
+            </div>
+
+
+
+
+            <div class="nuevo" id="pregunta3">
+
+                <img src="./img/ladyGaga.jpg" alt="lady gaga">
+
+                <div class="respuestas">
+                    <p>
+                        ¿Qué premios ganó Lady Gaga el mismo año?
+                    </p>
+
+                    <input type="radio" id="p16" name="pregunta3" value="EmmyGrammy" onclick="resultado()">
+                    <label for="p16" id="EmmyGrammy">Emmy y Grammy</label><br>
+
+                    <input type="radio" id="p17" name="pregunta3" value="OscarTony" onclick="resultado()">
+                    <label for="p17" id="OscarTony">Oscar y Tony</label><br>
+
+                    <input type="radio" id="p18" name="pregunta3" value="GrammyOscar" onclick="resultado()">
+                    <label for="p18" id="GrammyOscar">Grammy y Oscar</label><br>
+                </div>
+            </div>
+
+        </form>
+        <p id="resultado" class="resultado"></p>
+         <button onclick="document.location='/categoria1.html'">¡Ahora intenta con Cultura!</button>
+         <button onclick="verificar();">Resultados</button>
+         <button onclick="document.location='/fin.html'">Finalizar</button>
+
+         
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Trivia</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="categoria1.js"></script>
+</head>
+
+<body>
+<header>Responde las siguientes preguntas:</header>
+
+<div id="contenedor1">
+  <form action="myForm" id="myForm">
+  <div class="nuevo" id="pregunta1">
+      <img src="img/vaticano.jpg" alt="Vaticano">
+        <div class="respuestas">
+            <p>
+            ¿Cuál es el único país geográficamente situado dentro de la capital de otro estado, en este caso
+              Roma, Italia?
+            </p>
+
+
+                    <input type="radio" id="p01" name="pregunta1" value="vaticano" onclick="resultado()">
+                    <label for="p01" id="textovaticano">La Ciudad del Vaticano</label><br>
+
+                    <input type="radio" id="p02" name="pregunta1" value="jamaica" onclick="resultado()">
+                    <label for="p02" id="textojamaica">Jamaica</label><br>
+
+                    <input type="radio" id="p03" name="pregunta1" value="argentina" onclick="resultado()">
+                    <label for="p03" id="textoargentina">Argentina</label><br>
+                </div>
+            </div>
+
+            <div class="nuevo" id="pregunta2">
+                <img src="./img/torre.jpg" alt="torre eiffel">
+
+                <div class="respuestas">
+
+                    <p>
+                        ¿En que ciudad se encuentra este monumento?
+                    </p>
+
+                    <input type="radio" id="p04" name="pregunta2" value="Roma" onclick="resultado()">
+                    <label for="p04" id="textoroma">Roma</label><br>
+
+                    <input type="radio" id="p05" name="pregunta2" value="Paris" onclick="resultado()">
+                    <label for="p05" id="textoparis">Paris</label><br>
+
+                    <input type="radio" id="p06" name="pregunta2" value="Venecia" onclick="resultado()">
+                    <label for="p06" id="textovenecia">Venecia</label><br>
+                </div>
+            </div>
+
+            <div class="nuevo" id="pregunta3">
+
+                <img src="./img/Guatemala.jpg" alt="guatemala">
+
+                <div class="respuestas">
+                    <p>
+                        ¿Es conocido como el país de La Eterna Primavera por su agradable clima durante todo el año?
+                    </p>
+
+                    <input type="radio" id="p07" name="pregunta3" value="Guatemala" onclick="resultado()">
+                    <label for="p07" id="textoguatemala">Guatemala</label><br>
+
+                    <input type="radio" id="p08" name="pregunta3" value="Colombia" onclick="resultado()">
+                    <label for="p08" id="textocolombia">Colombia</label><br>
+
+                    <input type="radio" id="p09" name="pregunta3" value="Chile" onclick="resultado()">
+                    <label for="p09" id="textochile">Chile</label><br>
+                </div>
+            </div>
+        </form>
+        <p id="resultado" class="resultado"></p>
+        <button onclick="document.location='/categoria2.html'">¡Ahora intenta con Farándula!</button>
+
+        <button onclick="verificar();">Resultados</button>
+        
+         <button onclick="document.location='/fin.html'">Finalizar</button>
+        <!--<button onclick="puntaje()">Resultado</button>-->
+    </div>
+</body>
+
+</html>
